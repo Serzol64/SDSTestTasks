@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p></p>
+		<script>
+			$.ajax({
+				url: 'backend.php',
+				method: 'get',
+				dataType: 'html',
+				success: (data) => { $('p').html(data); }
+			});
+		</script>
+	</body>
+</html>
